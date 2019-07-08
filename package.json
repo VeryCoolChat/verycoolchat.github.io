@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VeryCoolChat/verycoolchat.github.io/issues"
   },
-  "homepage": "https://github.com/VeryCoolChat/verycoolchat.github.io#readme"
+  "homepage": "https://github.com/VeryCoolChat/verycoolchat.github.io#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
