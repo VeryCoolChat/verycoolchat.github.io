@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/VeryCoolChat/verycoolchat.github.io#readme",
   "dependencies": {
+    "firebase": "^6.2.4",
     "gh-pages": "^2.0.1"
   }
 }
