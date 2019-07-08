@@ -35,6 +35,7 @@ if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
 		fclose($handle);
 	}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
