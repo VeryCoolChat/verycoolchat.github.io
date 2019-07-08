@@ -170,6 +170,7 @@ $(document).ready(function() {
 	});
 });
 </script>
+
 <script>
 var inputElement = document.getElementById("nickname");
 
