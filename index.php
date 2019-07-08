@@ -79,6 +79,8 @@ function myFunction(){
 ?>
 
 <div class="pizza">
+  <form method="get" action="">
+
 
     <table style="border: none;background-color: #31A4E1; width: 100%; height: 100%;" align="center">
       <thead>
