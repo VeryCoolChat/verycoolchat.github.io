@@ -22,7 +22,7 @@ if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
 	$handle = fopen("$room/$uname", "w");
 	fwrite($handle, time());
 	fclose($handle);
-	
+
 	$files = scandir($room);
 	$users='';
 	foreach ($files as $user) if ($user!='.' && $user!='..') $users.=$user."\n";
