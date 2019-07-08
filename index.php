@@ -147,8 +147,8 @@ el=document.myform.txtt
   var input = document.getElementById("txtt");
   input.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("myBtn").click();
+      event.preventDefault();
+      document.getElementById("myBtn").click();
     }
   });
 </script>
