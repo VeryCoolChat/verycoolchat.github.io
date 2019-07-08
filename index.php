@@ -155,10 +155,10 @@ input.addEventListener("keyup", function(event) {
 
 <script>
   $("document").ready(function(){
-  var interval = setInterval(refresh_box(), 1000);
-  function refresh_div() {
-    $("hehe").load('index.php');
-  }
+    var interval = setInterval(refresh_box(), 1000);
+    function refresh_div() {
+      $("hehe").load('index.php');
+    }
 })
 </script>
 
