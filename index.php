@@ -42,11 +42,9 @@ if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
 <meta http-equiv="Content-Type" content="text/html; charset= utf-8">
 
 <script>
-
 function myFunction(){
 	alert("testing123");
 };
-
 </script>
 
 </head>
