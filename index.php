@@ -166,7 +166,7 @@ el=document.myform.txtt
   $(document).ready(function() {
     $("#refresh").click(function() {
       $("#hehe").load("index.php");
-    
+      
       return false;
     });
   });
