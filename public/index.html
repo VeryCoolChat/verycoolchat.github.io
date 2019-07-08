@@ -49,7 +49,7 @@
 
       var db = firebase.firestore();
       var website_chat = db.collection("website_chat")
-      var displayNames = db.collection("")
+      var displayNames = db.collection("displayNames")
 
       firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
