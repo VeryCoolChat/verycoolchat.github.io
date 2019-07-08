@@ -159,7 +159,7 @@ input.addEventListener("keyup", function(event) {
   function refresh_div() {
     $("hehe").load('index.php');
   }
-};)
+})
 </script>
 
 <script>
