@@ -81,42 +81,42 @@ function myFunction(){
 
 <div class="pizza">
 
-<table style="border: none;background-color: #31A4E1; width: 100%; height: 100%;" align="center">
-<thead>
-<center style="background-color: #31A4E1;"><p style="font-size:200%; font-family: sans-serif; color: white; margin:0;">Chat</p>Have an account? <a href="https://verycoolthanksforsharing.firebaseapp.com/">Sign In</a></center>
-</thead>
-<tbody>
+  <table style="border: none;background-color: #31A4E1; width: 100%; height: 100%;" align="center">
+  <thead>
+  <center style="background-color: #31A4E1;"><p style="font-size:200%; font-family: sans-serif; color: white; margin:0;">Chat</p>Have an account? <a href="https://verycoolthanksforsharing.firebaseapp.com/">Sign In</a></center>
+  </thead>
+  <tbody>
 
-	<tr>
-		<td style="font-family: sans-serif;font-size: 17pt;text-align: left; width: 502px; color: white;"><center>Name:</center></td>
-		<td style="font-family: sans-serif; font-size: 17pt; text-align: left; color: white; width: 500px;">
-    <center><input id="name" maxlength="15" id="nickname" name="uname" style="font-size: medium; width: 100px; color: #31A4E1;" required></center></td>
-  </tr>
-  
-	<tr>
-
-    <td style="font-family: sans-serif;font-size: 17pt;text-align: left; width: 432px; color: white;">
-      <center>Select:</center>
-    </td>
-		<td style="font-family: sans-serif; font-size: 17pt; text-align: left; color: #31A4E1; width: 100px;">
-		  <center>
-        <select name="rname" style="width: 100%; font-size: medium; color: #31A4E1;">
-		      <option selected="">Website</option>
-		      <option>Games</option>
-        </select>
-      </center>
-    </td>
+    <tr>
+      <td style="font-family: sans-serif;font-size: 17pt;text-align: left; width: 502px; color: white;"><center>Name:</center></td>
+      <td style="font-family: sans-serif; font-size: 17pt; text-align: left; color: white; width: 500px;">
+      <center><input id="name" maxlength="15" id="nickname" name="uname" style="font-size: medium; width: 100px; color: #31A4E1;" required></center></td>
+    </tr>
     
-  </tr>
-  
-	<tr>
-		<td style="font-family: sans-serif;font-size: 17pt;text-align: center; color: #31A4E1; padding-top:10px;padding-bottom:10px" colspan="2">
-		<input name="enSubmit" style="width: 118px;border: none;background-color: white; height: 63px; font-size: 30pt; font-family: sans-serif; color: #31A4E1" type="submit" onclick="store()" value="Enter" ></td>
-  </tr>
-  
-  </tbody>
-</table>
-</form>
+    <tr>
+
+      <td style="font-family: sans-serif;font-size: 17pt;text-align: left; width: 432px; color: white;">
+        <center>Select:</center>
+      </td>
+      <td style="font-family: sans-serif; font-size: 17pt; text-align: left; color: #31A4E1; width: 100px;">
+        <center>
+          <select name="rname" style="width: 100%; font-size: medium; color: #31A4E1;">
+            <option selected="">Website</option>
+            <option>Games</option>
+          </select>
+        </center>
+      </td>
+      
+    </tr>
+    
+    <tr>
+      <td style="font-family: sans-serif;font-size: 17pt;text-align: center; color: #31A4E1; padding-top:10px;padding-bottom:10px" colspan="2">
+      <input name="enSubmit" style="width: 118px;border: none;background-color: white; height: 63px; font-size: 30pt; font-family: sans-serif; color: #31A4E1" type="submit" onclick="store()" value="Enter" ></td>
+    </tr>
+    
+    </tbody>
+  </table>
+  </form>
 
 </div>
 
