@@ -101,7 +101,8 @@ function myFunction(){
 		      <option selected="">Website</option>
 		      <option>Games</option>
         </select>
-      </center></td>
+      </center>
+    </td>
 	</tr>
 	<tr>
 		<td style="font-family: sans-serif;font-size: 17pt;text-align: center; color: #31A4E1; padding-top:10px;padding-bottom:10px" colspan="2">
