@@ -92,10 +92,11 @@
 
     getRealtimeUpdates = function() {
       docRef.onSnapshort(function(doc){
-        if (doc && doc.exists) {
-          const chatHistory = doc.data();
-          outputHeader.innerText = chatHistory.displayName + ": " + chatHistory.text;
-        }
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is a new.");
+        para.appendChild(node);
+        var element = document.getElementById("div1");
+        element.appendChild(para);
       })
     }
     getRealtimeUpdates();
