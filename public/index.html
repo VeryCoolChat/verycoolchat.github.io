@@ -60,7 +60,7 @@
     function sendMessage(message) {
       var fh = fopen("c:\\MyFile.txt", 3); // Open the file for writing
 
-      if (fh != -1){
+      if (fh != -1) {
         var str = "Some text goes here...";
         fwrite(fh, str); // Write the string to a file
         fclose(fh); // Close the file 
