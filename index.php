@@ -119,10 +119,9 @@ function myFunction(){
 
 <head>
   <title>Very Cool Chat</title>
-
   <link rel="icon" type="image/ico0.2ref="images/oof.png" />
   <link rel="stylesheet" href="index.css">
-  
+
   <style>
 
     textarea > span{
