@@ -159,7 +159,7 @@ input.addEventListener("keyup", function(event) {
   function refresh_div() {
     $("hehe").load('index.php');
   }
-}) /*<= The closer ) bracket is missing in this line*/
+})
 </script>
 
 <script>
