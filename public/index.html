@@ -78,7 +78,7 @@
     function sendMessage(chatroom, text) {
       db.collection(chatroom).add({
         displayName: name,
-        text: "Lovelace",
+        text: text,
         time: db.ServerValue.TIMESTAMP,
         uid: uid,
       })
