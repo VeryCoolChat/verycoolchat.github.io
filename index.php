@@ -144,7 +144,6 @@ el=document.myform.txtt
 </script>
  
 <script>
-
 var input = document.getElementById("txtt");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
