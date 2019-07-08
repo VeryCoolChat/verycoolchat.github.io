@@ -27,7 +27,7 @@
 
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
-          // User is signed in.
+          toggleChatroom()
         } else {
           // No user is signed in.
         }
