@@ -52,7 +52,7 @@ function myFunction(){
 
 <body OnLoad="document.myform.txt.focus()" style="font-family: sans-serif">
 <form action="" method="post" name="myform">
-<table style=";width: 752px" align="center">
+<table style="width: 752px" align="center">
 	<tr>
 		<td style="font-family: sans-serif;font-size: 17pt;text-align: center;width: 537; color: #2214B9;border-style: solid;border-width: 1px; height: 350px;">
 		<div id="hehe">	<textarea readonly="readonly" name="txtchat" style="width: 581px; color: #000000; height: 365px; background-color: #F4F8D1; font-family: 'times New Roman', Times, serif; font-size: 12pt;"><?php echo "Welcome to the $room chatroom... (Remember to be sweet and short, or else the device will know- and your message will be deleted.)&#13;&#10;&#13;&#10;\n$contents"?> </textarea></div>
