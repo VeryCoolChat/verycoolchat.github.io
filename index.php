@@ -86,6 +86,7 @@ function myFunction(){
 <center style="background-color: #31A4E1;"><p style="font-size:200%; font-family: sans-serif; color: white; margin:0;">Chat</p>Have an account? <a href="https://verycoolthanksforsharing.firebaseapp.com/">Sign In</a></center>
 </thead>
 <tbody>
+  
 	<tr>
 		<td style="font-family: sans-serif;font-size: 17pt;text-align: left; width: 502px; color: white;"><center>Name:</center></td>
 		<td style="font-family: sans-serif; font-size: 17pt; text-align: left; color: white; width: 500px;">
