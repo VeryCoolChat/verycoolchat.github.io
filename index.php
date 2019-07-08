@@ -124,9 +124,9 @@ function myFunction(){
   <link rel="stylesheet" href="index.css">
   <style>
 
-  textarea > span{
-      font-style: italic;
-  }
+    textarea > span{
+        font-style: italic;
+    }
 
   </style>
 </head>
