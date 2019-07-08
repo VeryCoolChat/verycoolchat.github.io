@@ -83,7 +83,7 @@ function myFunction(){
 
 <table style="border: none;background-color: #31A4E1; width: 100%; height: 100%;" align="center">
 <thead>
-<center style="background-color: #31A4E1;"><p style="font-size:200%; font-family: sans-serif; color: white; margin:0;">Chat</p>Have an account? <a href="https://verycoolthanksforsharing.firebaseapp.com/">Sign In </a></center>
+<center style="background-color: #31A4E1;"><p style="font-size:200%; font-family: sans-serif; color: white; margin:0;">Chat</p>Have an account? <a href="https://verycoolthanksforsharing.firebaseapp.com/">Sign In</a></center>
 </thead>
 <tbody>
 	<tr>
