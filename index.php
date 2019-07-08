@@ -198,7 +198,6 @@ $(document).ready(function(){
     $textarea.scrollTop($textarea[0].scrollHeight);
 });
 </script>
-
 </body>
 
 <head>
