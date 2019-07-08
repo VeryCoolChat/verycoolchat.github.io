@@ -79,7 +79,7 @@
       db.collection(chatroom).add({
         displayName: "Ada",
         text: "Lovelace",
-        time: time,
+        time: firebase.database.ServerValue.TIMESTAMP,
       })
         .then(function (docRef) {
           console.log("Message sent with docid: ", docRef.id);
