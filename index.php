@@ -5,7 +5,6 @@ if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
 	$uname=$_GET['uname'];
 	if (!is_dir($room)) mkdir($room);
 	$files = scandir($room);  
-
 	foreach ($files as $user){
 		if ($user=='.' || $user=='..') continue;
 		$handle=fopen("$room/$user",'r');
