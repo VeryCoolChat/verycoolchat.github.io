@@ -26,13 +26,13 @@
   <script>
 
     firebase.auth().onAuthStateChanged(function (user) {
-        if (user) {
-          toggleSelection(false);
-          toggleChatroom(true);
-        } else {
-          toggleChatroom(false);
-          toggleSelection(true);
-        }
+      if (user) {
+        toggleSelection(false);
+        toggleChatroom(true);
+      } else {
+        toggleChatroom(false);
+        toggleSelection(true);
+      }
     });
 
     function toggleChatroom(on) {
