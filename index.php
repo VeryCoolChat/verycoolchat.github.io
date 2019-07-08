@@ -104,7 +104,8 @@ function myFunction(){
         </select>
       </center>
     </td>
-	</tr>
+  </tr>
+  
 	<tr>
 		<td style="font-family: sans-serif;font-size: 17pt;text-align: center; color: #31A4E1; padding-top:10px;padding-bottom:10px" colspan="2">
 		<input name="enSubmit" style="width: 118px;border: none;background-color: white; height: 63px; font-size: 30pt; font-family: sans-serif; color: #31A4E1" type="submit" onclick="store()" value="Enter" ></td>
