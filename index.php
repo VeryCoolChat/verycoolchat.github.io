@@ -163,13 +163,13 @@ input.addEventListener("keyup", function(event) {
 </script>
 
 <script>
-$(document).ready(function() {
-  $("#refresh").click(function() {
-    $("#hehe").load("index.php");
-  
-	  return false;
-	});
-});
+  $(document).ready(function() {
+    $("#refresh").click(function() {
+      $("#hehe").load("index.php");
+    
+      return false;
+    });
+  });
 </script>
 
 <script>
