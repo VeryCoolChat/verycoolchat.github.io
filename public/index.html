@@ -25,6 +25,10 @@
 
   <script>
 
+    const firebase = require("firebase");
+      // Required for side-effects
+      require("firebase/firestore");
+
     function getUserDetails() {
       firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
@@ -58,7 +62,7 @@
     };
 
     function sendMessage(text) {
-      
+
     };
 
     window.onload = function () {
