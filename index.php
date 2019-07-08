@@ -165,7 +165,6 @@ input.addEventListener("keyup", function(event) {
 
 <script>
 $(document).ready(function() {
-
   $("#refresh").click(function() {
      $("#hehe").load("index.php");
   
