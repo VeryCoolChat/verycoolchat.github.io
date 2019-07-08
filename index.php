@@ -118,17 +118,17 @@ function myFunction(){
 
 
 <head>
-<title>Very Cool Chat</title>
+  <title>Very Cool Chat</title>
 
-<link rel="icon" type="image/ico0.2ref="images/oof.png" />
-<link rel="stylesheet" href="index.css">
-<style>
+  <link rel="icon" type="image/ico0.2ref="images/oof.png" />
+  <link rel="stylesheet" href="index.css">
+  <style>
 
-textarea > span{
-    font-style: italic;
-}
+  textarea > span{
+      font-style: italic;
+  }
 
-</style>
+  </style>
 </head>
 <script>
 el=document.myform.txtt
