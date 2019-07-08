@@ -96,8 +96,8 @@ function myFunction(){
       <center>Select:</center>
     </td>
 		<td style="font-family: sans-serif; font-size: 17pt; text-align: left; color: #31A4E1; width: 100px;">
-		<center>
-      <select name="rname" style="width: 100%; font-size: medium; color: #31A4E1;">
+		  <center>
+        <select name="rname" style="width: 100%; font-size: medium; color: #31A4E1;">
 		<option selected="">Website</option>
 		<option>Games</option>
 		</select></center></td>
