@@ -94,6 +94,7 @@ function myFunction(){
   </tr>
   
 	<tr>
+    
     <td style="font-family: sans-serif;font-size: 17pt;text-align: left; width: 432px; color: white;">
       <center>Select:</center>
     </td>
