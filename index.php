@@ -47,8 +47,6 @@ function myFunction(){
 };
 </script>
 
-
-
 </head>
 
 <body OnLoad="document.myform.txt.focus()" style="font-family: sans-serif">
