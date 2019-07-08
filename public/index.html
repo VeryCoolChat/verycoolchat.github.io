@@ -37,6 +37,7 @@
         name = user.displayName;
         uid = user.uid;
       }
+
       firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
           toggleSelection(false);
@@ -46,8 +47,6 @@
           toggleSelection(true);
         }
       });
-
-
     }
 
     function toggleChatroom(on) {
