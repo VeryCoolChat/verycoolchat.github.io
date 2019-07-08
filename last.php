@@ -35,6 +35,22 @@ if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
 		fclose($handle);
 	}
 ?>
+<!DOCTYPE html>
+<html>
+<link rel="manifest" href="/manifest.json">
+<!--Another head and style thing...-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset= utf-8">
+
+<script>
+
+function myFunction(){
+	alert("testing123");
+};
+
+</script>
+
+</head>
 <body OnLoad="document.myform.txt.focus()" style="font-family: sans-serif">
 <form action="" method="post" name="myform">
 <table style=";width: 752px" align="center">
