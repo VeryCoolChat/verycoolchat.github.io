@@ -99,7 +99,7 @@ function myFunction(){
 		  <center>
         <select name="rname" style="width: 100%; font-size: medium; color: #31A4E1;">
 		      <option selected="">Website</option>
-		<option>Games</option>
+		      <option>Games</option>
 		</select></center></td>
 	</tr>
 	<tr>
