@@ -73,10 +73,6 @@ function myFunction(){
 </table>
 </form>
 
- 
-<?php
-}else {?>
-
 <div class="pizza">
 
   <form method="get" action="">
