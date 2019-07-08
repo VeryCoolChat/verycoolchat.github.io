@@ -37,6 +37,8 @@
         uid = user.uid;
       }
 
+      firebase.init
+
       firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
           toggleSelection(false);
