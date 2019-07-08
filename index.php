@@ -12,7 +12,6 @@ if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
 		fclose($handle);
 		if ((time()-$time)>20) unlink("$room/$user"); 
 	}
-
 	$contents='';
 	$filename="$room.txt";
 	if (file_exists($filename)){
@@ -20,7 +19,6 @@ if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
 		$contents = fread($handle, filesize($filename));
 		fclose($handle);	
 	}
-
 	$handle = fopen("$room/$uname", "w");
 	fwrite($handle, time());
 	fclose($handle);
