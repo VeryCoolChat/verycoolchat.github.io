@@ -118,7 +118,7 @@ function myFunction(){
 
 
 <head>
-<title>Chat </title>
+<title>Very Cool Chat</title>
 <link rel="icon" type="image/ico0.2ref="images/oof.png" />
 
 <link rel="stylesheet" href="index.css">
