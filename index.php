@@ -166,31 +166,31 @@ el=document.myform.txtt
   $(document).ready(function() {
     $("#refresh").click(function() {
       $("#hehe").load("index.php");
-      
+
       return false;
     });
   });
 </script>
 
 <script>
-var inputElement = document.getElementById("nickname");
+  var inputElement = document.getElementById("nickname");
 
-persistInput(inputElement);
- 
-function persistInput(input)
-{
-  var key = "input-" + input.id;
-
-  var storedValue = localStorage.getItem(key);
-
-  if (storedValue)
-      input.value = storedValue;
-
-  input.addEventListener('input', function ()
+  persistInput(inputElement);
+  
+  function persistInput(input)
   {
-      localStorage.setItem(key, input.value);
-  });
-}
+    var key = "input-" + input.id;
+
+    var storedValue = localStorage.getItem(key);
+
+    if (storedValue)
+        input.value = storedValue;
+
+    input.addEventListener('input', function ()
+    {
+        localStorage.setItem(key, input.value);
+    });
+  }
 </script>
 
 <script>
