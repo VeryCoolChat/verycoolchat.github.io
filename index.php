@@ -1,7 +1,4 @@
 <?php
-
-echo '<script type="text/javascript">myFunction();</script>';
-
 if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
 
 	echo'<meta http-equiv="refresh" content="30">';
