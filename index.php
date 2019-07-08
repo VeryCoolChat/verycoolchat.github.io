@@ -92,7 +92,8 @@ function myFunction(){
 		<center><input id="name" maxlength="15" id="nickname" name="uname" style="font-size: medium; width: 100px; color: #31A4E1;" required></center></td>
 	</tr>
 	<tr>
-		<td style="font-family: sans-serif;font-size: 17pt;text-align: left; width: 432px; color: white;"><center>Select:</center></td>
+    <td style="font-family: sans-serif;font-size: 17pt;text-align: left; width: 432px; color: white;">
+    <center>Select:</center></td>
 		<td style="font-family: sans-serif; font-size: 17pt; text-align: left; color: #31A4E1; width: 100px;">
 		<center><select name="rname" style="width: 100%; font-size: medium; color: #31A4E1;">
 		<option selected="">Website</option>
