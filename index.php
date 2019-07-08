@@ -116,10 +116,6 @@ function myFunction(){
 
 </div>
 
-<?php
-}
-?>
-
 
 <head>
 <title> Chat </title>
