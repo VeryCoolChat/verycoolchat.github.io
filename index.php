@@ -37,7 +37,6 @@ if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
 ?>
 <!DOCTYPE html>
 <html>
-<link rel="manifest" href="/manifest.json">
 <!--Another head and style thing...-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset= utf-8">
