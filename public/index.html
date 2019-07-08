@@ -26,24 +26,24 @@
   <script>
 
     function getUserDetails() {
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
-        toggleSelection(false);
-        toggleChatroom(true);
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          toggleSelection(false);
+          toggleChatroom(true);
 
-      } else {
-        toggleChatroom(false);
-        toggleSelection(true);
+        } else {
+          toggleChatroom(false);
+          toggleSelection(true);
+        }
+      });
+
+      var user = firebase.auth().currentUser;
+      var name, email, photoUrl, uid, emailVerified;
+
+      if (user != null) {
+        name = user.displayName;
+        uid = user.uid; 
       }
-    });
-
-    var user = firebase.auth().currentUser;
-    var name, email, photoUrl, uid, emailVerified;
-
-    if (user != null) {
-      name = user.displayName;
-      uid = user.uid; 
-    }
     }
 
     function toggleChatroom(on) {
