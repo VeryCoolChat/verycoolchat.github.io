@@ -110,7 +110,7 @@ function myFunction(){
 		<input name="enSubmit" style="width: 118px;border: none;background-color: white; height: 63px; font-size: 30pt; font-family: sans-serif; color: #31A4E1" type="submit" onclick="store()" value="Enter" ></td>
 	</tr>
   </tbody>
-  
+
 </table>
 </form>
 
