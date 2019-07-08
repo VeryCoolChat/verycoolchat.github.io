@@ -193,11 +193,11 @@ function persistInput(input)
 </script>
 
 <script>
-$(document).ready(function(){
-    var $textarea = $('btw');
-    $textarea.scrollTop($textarea[0].scrollHeight);
-});
-</script>
+  $(document).ready(function(){
+      var $textarea = $('btw');
+      $textarea.scrollTop($textarea[0].scrollHeight);
+  });
+  </script>
 </body>
 
 <head>
