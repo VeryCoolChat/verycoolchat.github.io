@@ -1,4 +1,6 @@
-<?phpipt type="text/javascript">myFunction();</script>';
+<?php
+
+echo '<script type="text/javascript">myFunction();</script>';
 
 if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
 
