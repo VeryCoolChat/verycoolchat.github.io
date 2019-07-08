@@ -27,7 +27,7 @@
 
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
-          toggle
+          toggleSelection(false)
           toggleChatroom(true);
         } else {
           toggleChatroom(false);
