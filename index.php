@@ -51,25 +51,25 @@ function myFunction(){
 
 <body OnLoad="document.myform.txt.focus()" style="font-family: sans-serif">
   <form action="" method="post" name="myform" style="position: fixed; width:100%; height: 100%;">
-  <table style="width: 250px; padding: none; height: 100%;" align="right">
-    <tr style="margin: 0;">
-      <td style="font-family: sans-serif; border: none; color: white; font-size: 150%; margin: 0; padding: 2%; background-color: #31A4E1">
-        <p><?php echo " $room Chat"?></p>
-      </td>
-    </tr>
-    <tr style="margin: 0;">
-      <td style="height: 100%;margin: 0;">
-      <div id="hehe" style="height: 100%;">	<textarea readonly="readonly" id="btw" name="txtchat" style="width: 100%; color: #31A4E1; height: 100%; background-color: #EDEDED; font-family: 'times New Roman', Times, serif; font-size: 12pt;"><?php echo "Chat: \n$contents"?> </textarea></div>
-      </td>
-    </tr>
-    <tr style="margin: 0;">
-      <td style="margin: 0">
-    <input id="time" contentEditable="false" id="txtt" autocomplete="off" name="txt" style="width: 100%; padding: 5%; height: 50px; color: gray; background-color: white; font-family: sans-serif; font-size: 12pt;"></textarea></td>
-      <td style="border-style: solid;border-width: 1px; height: 39px;padding-left: 8px; width: 143px; text-align: center; display: none;">
-      <input  id="myBtn" name="Send" style="width: 118px; height: 63px; font-size: 30pt; font-family: 'Times New Roman', Times, serif; color: #19B024;" type="submit" value="Send">
-         </td>
-    </tr>
-  </table>
+    <table style="width: 250px; padding: none; height: 100%;" align="right">
+      <tr style="margin: 0;">
+        <td style="font-family: sans-serif; border: none; color: white; font-size: 150%; margin: 0; padding: 2%; background-color: #31A4E1">
+          <p><?php echo " $room Chat"?></p>
+        </td>
+      </tr>
+      <tr style="margin: 0;">
+        <td style="height: 100%;margin: 0;">
+        <div id="hehe" style="height: 100%;">	<textarea readonly="readonly" id="btw" name="txtchat" style="width: 100%; color: #31A4E1; height: 100%; background-color: #EDEDED; font-family: 'times New Roman', Times, serif; font-size: 12pt;"><?php echo "Chat: \n$contents"?> </textarea></div>
+        </td>
+      </tr>
+      <tr style="margin: 0;">
+        <td style="margin: 0">
+      <input id="time" contentEditable="false" id="txtt" autocomplete="off" name="txt" style="width: 100%; padding: 5%; height: 50px; color: gray; background-color: white; font-family: sans-serif; font-size: 12pt;"></textarea></td>
+        <td style="border-style: solid;border-width: 1px; height: 39px;padding-left: 8px; width: 143px; text-align: center; display: none;">
+        <input  id="myBtn" name="Send" style="width: 118px; height: 63px; font-size: 30pt; font-family: 'Times New Roman', Times, serif; color: #19B024;" type="submit" value="Send">
+           </td>
+      </tr>
+    </table>
   </form>
 
   <div class="pizza">
