@@ -152,7 +152,7 @@ input.addEventListener("keyup", function(event) {
    document.getElementById("myBtn").click();
   }
 });
-</scrip
+</script>
 <script>
   $("document").ready(function(){
     var interval = setInterval(refresh_box(), 1000);
