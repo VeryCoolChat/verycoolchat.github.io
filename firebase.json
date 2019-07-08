@@ -12,7 +12,7 @@
     ]
   },
   "hosting": {
-    "site": ""
+    "site": "thanksforsharing";
     "public": "public",
     "ignore": [
       "firebase.json",
