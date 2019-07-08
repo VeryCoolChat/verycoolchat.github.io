@@ -67,7 +67,7 @@ function myFunction(){
       <input id="time" contentEditable="false" id="txtt" autocomplete="off" name="txt" style="width: 100%; padding: 5%; height: 50px; color: gray; background-color: white; font-family: sans-serif; font-size: 12pt;"></textarea></td>
         <td style="border-style: solid;border-width: 1px; height: 39px;padding-left: 8px; width: 143px; text-align: center; display: none;">
         <input  id="myBtn" name="Send" style="width: 118px; height: 63px; font-size: 30pt; font-family: 'Times New Roman', Times, serif; color: #19B024;" type="submit" value="Send">
-           </td>
+        </td>
       </tr>
     </table>
   </form>
