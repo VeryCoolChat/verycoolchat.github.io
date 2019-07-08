@@ -127,6 +127,7 @@ function myFunction(){
         font-style: italic;
     }
   </style>
+  
 </head>
 <script>
 el=document.myform.txtt
