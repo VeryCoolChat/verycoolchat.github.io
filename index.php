@@ -1,6 +1,5 @@
 <?php
 if (isset($_GET['enSubmit']) && isset($_GET['uname']) && isset($_GET['rname'])){
-
 	echo'<meta http-equiv="refresh" content="30">';
 	$room=$_GET['rname']; 
 	$uname=$_GET['uname'];
