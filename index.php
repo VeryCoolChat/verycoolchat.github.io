@@ -77,7 +77,6 @@ function myFunction(){
 <?php
 }else {
 ?>
-<form method="get" action="">
 
 <div class="pizza">
 
