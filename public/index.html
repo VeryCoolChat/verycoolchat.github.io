@@ -73,7 +73,7 @@
         el.style['display'] = on ? 'block' : 'none';
     };
 
-    function sendMessage(text) {
+    function sendMessage(chatroom, text) {
       db.collection(chatroom).add({
         first: "Ada",
         last: "Lovelace",
