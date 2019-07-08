@@ -160,6 +160,7 @@ input.addEventListener("keyup", function(event) {
   }
 }) /*<= The closer ) bracket is missing in this line*/
 </script>
+
 <script>
 $(document).ready(function() {
 
