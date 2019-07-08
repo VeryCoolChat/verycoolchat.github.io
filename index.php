@@ -86,7 +86,7 @@ function myFunction(){
 <center style="background-color: #31A4E1;"><p style="font-size:200%; font-family: sans-serif; color: white; margin:0;">Chat</p>Have an account? <a href="https://verycoolthanksforsharing.firebaseapp.com/">Sign In</a></center>
 </thead>
 <tbody>
-  
+
 	<tr>
 		<td style="font-family: sans-serif;font-size: 17pt;text-align: left; width: 502px; color: white;"><center>Name:</center></td>
 		<td style="font-family: sans-serif; font-size: 17pt; text-align: left; color: white; width: 500px;">
@@ -109,7 +109,8 @@ function myFunction(){
 		<td style="font-family: sans-serif;font-size: 17pt;text-align: center; color: #31A4E1; padding-top:10px;padding-bottom:10px" colspan="2">
 		<input name="enSubmit" style="width: 118px;border: none;background-color: white; height: 63px; font-size: 30pt; font-family: sans-serif; color: #31A4E1" type="submit" onclick="store()" value="Enter" ></td>
 	</tr>
-	</tbody>
+  </tbody>
+  
 </table>
 </form>
 
