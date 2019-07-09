@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded", event => {
     const db = firebase.firestore();
     const chatHistory = firebase.firestore();
 
-    chatHistory.onSnapshot(doc)
+    chatHistory.onSnapshot(doc =>)
 });
