@@ -45,17 +45,6 @@
         var website_chat = db.collection("website_chat");
         var displayNames = db.collection("displayNames");
 
-        firebase.auth().onAuthStateChanged(function (user) {
-          if (user) {
-            toggleSelection(false);
-            toggleChatroom(true);
-          } else {
-            toggleChatroom(false);
-            toggleSelection(true);
-          }
-        });
-      }
-
       function sendMessage(chatroom, text) {
         db.collection(chatroom).add({
           displayName: name,
