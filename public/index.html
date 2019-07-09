@@ -16,91 +16,91 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
-      <script>
+    <script>
 
-        const firebase = require("firebase");
-        require("firebase/firestore");
+      const firebase = require("firebase");
+      require("firebase/firestore");
 
-        function getUserDetails() {
+      function getUserDetails() {
 
-          firebase.initializeApp({
-            apiKey: "AIzaSyCxRTkWjoToUoNsM8Rm6zPwiJBG_JCB4fo",
-            authDomain: "verycoolthanksforsharing.firebaseapp.com",
-            databaseURL: "https://verycoolthanksforsharing.firebaseio.com",
-            projectId: "verycoolthanksforsharing",
-            storageBucket: "verycoolthanksforsharing.appspot.com",
-            messagingSenderId: "78626384450",
-            appId: "1:78626384450:web:5c1a5470485502ab"
-          });
+        firebase.initializeApp({
+          apiKey: "AIzaSyCxRTkWjoToUoNsM8Rm6zPwiJBG_JCB4fo",
+          authDomain: "verycoolthanksforsharing.firebaseapp.com",
+          databaseURL: "https://verycoolthanksforsharing.firebaseio.com",
+          projectId: "verycoolthanksforsharing",
+          storageBucket: "verycoolthanksforsharing.appspot.com",
+          messagingSenderId: "78626384450",
+          appId: "1:78626384450:web:5c1a5470485502ab"
+        });
 
-          var user = firebase.auth().currentUser;
-          var name, uid;
+        var user = firebase.auth().currentUser;
+        var name, uid;
 
-          if (user != null) {
-            name = user.displayName;
-            uid = user.uid;
-          };
-
-          var db = firebase.firestore();
-          var website_chat = db.collection("website_chat");
-          var displayNames = db.collection("displayNames");
-
-          firebase.auth().onAuthStateChanged(function (user) {
-            if (user) {
-              toggleSelection(false);
-              toggleChatroom(true);
-            } else {
-              toggleChatroom(false);
-              toggleSelection(true);
-            }
-          });
-        }
-
-        function toggleChatroom(on) {
-          var el = document.getElementsByClassName('chatroom');
-
-          el.style['display'] = on ? 'block' : 'none';
+        if (user != null) {
+          name = user.displayName;
+          uid = user.uid;
         };
 
-        function toggleSelection(on) {
-          var el = document.getElementsByClassName('selectroom');
+        var db = firebase.firestore();
+        var website_chat = db.collection("website_chat");
+        var displayNames = db.collection("displayNames");
 
-          el.style['display'] = on ? 'block' : 'none';
-        };
+        firebase.auth().onAuthStateChanged(function (user) {
+          if (user) {
+            toggleSelection(false);
+            toggleChatroom(true);
+          } else {
+            toggleChatroom(false);
+            toggleSelection(true);
+          }
+        });
+      }
 
-        function sendMessage(chatroom, text) {
-          db.collection(chatroom).add({
-            displayName: name,
-            text: text,
-            time: db.ServerValue.TIMESTAMP,
-            uid: uid,
+      function toggleChatroom(on) {
+        var el = document.getElementsByClassName('chatroom');
+
+        el.style['display'] = on ? 'block' : 'none';
+      };
+
+      function toggleSelection(on) {
+        var el = document.getElementsByClassName('selectroom');
+
+        el.style['display'] = on ? 'block' : 'none';
+      };
+
+      function sendMessage(chatroom, text) {
+        db.collection(chatroom).add({
+          displayName: name,
+          text: text,
+          time: db.ServerValue.TIMESTAMP,
+          uid: uid,
+        })
+          .then(function (docRef) {
+            console.log("Message sent with docid: ", docRef.id);
           })
-            .then(function (docRef) {
-              console.log("Message sent with docid: ", docRef.id);
-            })
-            .catch(function (error) {
-              console.error("Error sharing a very cool message, thanks for sharing though!", error);
-            });
-        };
+          .catch(function (error) {
+            console.error("Error sharing a very cool message, thanks for sharing though!", error);
+          });
+      };
 
-        getRealtimeUpdates = function () {
-          // WHAT I"M DOING RIGHT NOW
-          // GOAL: MAKE THE UPDATING SYSTEM SO YOU CAN SEE OTHERS" MESSAGES
-          docRef.onSnapshort(function (text) {
-            var element = document.getElementById("chathistory");
-            var para = document.createElement("p");
-            var node = document.createTextNode(text);
-            para.appendChild(node);
-            element.appendChild(para);
-          })
-        }
-        getRealtimeUpdates();
+      getRealtimeUpdates = function () {
+        // WHAT I"M DOING RIGHT NOW
+        // GOAL: MAKE THE UPDATING SYSTEM SO YOU CAN SEE OTHERS" MESSAGES
+        docRef.onSnapshort(function (text) {
+          var element = document.getElementById("chathistory");
+          var para = document.createElement("p");
+          var node = document.createTextNode(text);
+          para.appendChild(node);
+          element.appendChild(para);
+        })
+      }
+      getRealtimeUpdates();
 
-        window.onload = function () {
-          getUserDetails();
-        };
+      window.onload = function () {
+        getUserDetails();
+      };
 
-      </script>
+    </script>
 
   </head>
   <body>
