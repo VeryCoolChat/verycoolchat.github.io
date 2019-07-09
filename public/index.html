@@ -96,7 +96,7 @@
       docRef.onSnapshort(function(text){
         var element = document.getElementById("chathistory");
         var para = document.createElement("p");
-        var node = document.createTextNode();
+        var node = document.createTextNode(text);
         para.appendChild(node);
         element.appendChild(para);
       })
