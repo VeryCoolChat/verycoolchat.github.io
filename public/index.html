@@ -56,18 +56,6 @@
         });
       }
 
-      function toggleChatroom(on) {
-        var el = document.getElementsByClassName('chatroom');
-
-        el.style['display'] = on ? 'block' : 'none';
-      };
-
-      function toggleSelection(on) {
-        var el = document.getElementsByClassName('selectroom');
-
-        el.style['display'] = on ? 'block' : 'none';
-      };
-
       function sendMessage(chatroom, text) {
         db.collection(chatroom).add({
           displayName: name,
