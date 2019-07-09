@@ -93,10 +93,10 @@
     getRealtimeUpdates = function() {
       // WHAT I"M DOING RIGHT NOW
       // GOAL: MAKE THE UPDATING SYSTEM SO YOU CAN SEE OTHERS" MESSAGES
-      docRef.onSnapshort(function(doc){
+      docRef.onSnapshort(function(text){
         var element = document.getElementById("chathistory");
         var para = document.createElement("p");
-        var node = document.createTextNode("This is a new.");
+        var node = document.createTextNode();
         para.appendChild(node);
         element.appendChild(para);
       })
