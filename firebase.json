@@ -13,7 +13,7 @@
     "source": "functions"
   },
   "hosting": {
-    "deploy_target": "verycoolchat.web.app",
+    "target": "verycoolchat.web.app",
     "public": "private",
     "ignore": [
       "firebase.json",
