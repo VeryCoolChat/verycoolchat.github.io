@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", event => {
 
     const app = firebase.app();
     const db = firebase.firestore();
-    const chatHistory = db.collection("website_chat").
+    const chatHistory = db.collection("website_chat").doc()
 
     chatHistory.onSnapshot(doc => {
         const chatData = doc.data();
