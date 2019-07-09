@@ -35,6 +35,10 @@
 
         var user = firebase.auth().currentUser;
         var name, uid;
+        
+        var db = firebase.firestore();
+        var website_chat = db.collection("website_chat");
+        var displayNames = db.collection("displayNames");
 
         if (user != null) {
           name = user.displayName;
