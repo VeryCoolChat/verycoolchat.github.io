@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", event => {
 
     chatHistory.onSnapshot(doc => {
         const chatData = doc.data();
-        document.write()
+        document.write( data)
     })
 });
