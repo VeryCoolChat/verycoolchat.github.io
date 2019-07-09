@@ -83,19 +83,6 @@
           });
       };
 
-      getRealtimeUpdates = function () {
-        // WHAT I"M DOING RIGHT NOW
-        // GOAL: MAKE THE UPDATING SYSTEM SO YOU CAN SEE OTHERS" MESSAGES
-        docRef.onSnapshot(function (text) {
-          var element = document.getElementById("chathistory");
-          var para = document.createElement("p");
-          var node = document.createTextNode(text);
-          para.appendChild(node);
-          element.appendChild(para);
-        })
-      }
-      getRealtimeUpdates();
-
       window.onload = function () {
         getUserDetails();
       };
