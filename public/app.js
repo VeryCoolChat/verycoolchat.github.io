@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", event => {
-
     const app = firebase.app();
     const db = firebase.firestore();
     const chatHistory = db.collection("website_chat").doc("5rz9qkx3yCvAzEuPiiOt")
