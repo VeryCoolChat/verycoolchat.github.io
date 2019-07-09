@@ -14,7 +14,7 @@
   },
   "hosting": {
     "target": "verycoolchat",
-    "public": "private",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
