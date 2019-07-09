@@ -1,146 +1,65 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset=utf-8 />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Thanks for Sharing</title>
 
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orangeindigo.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" href="../images/verycoolmathgamestitle.png" type="image/x-icon">
-    
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script defer="" src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-    <script defer="" src="/__/firebase/6.2.4/firebase-app.js"></script>
-    <script defer="" src="/__/firebase/6.2.4/firebase-auth.js"></script>
-    <script defer="" src="/__/firebase/6.2.4/firebase-database.js"></script>
-    <script defer="" src="/__/firebase/6.2.4/firebase-messaging.js"></script>
-    <script defer="" src="/__/firebase/6.2.4/firebase-storage.js"></script>
-    <script defer="" src="/__/firebase/init.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.2.4/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.2.4/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.2.4/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.2.4/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.2.4/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
 
-  <script>
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    const firebase = require("firebase");
-    require("firebase/firestore");
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-    function getUserDetails() {
-
-      firebase.initializeApp({
-      apiKey: "AIzaSyCxRTkWjoToUoNsM8Rm6zPwiJBG_JCB4fo",
-      authDomain: "verycoolthanksforsharing.firebaseapp.com",
-      databaseURL: "https://verycoolthanksforsharing.firebaseio.com",
-      projectId: "verycoolthanksforsharing",
-      storageBucket: "verycoolthanksforsharing.appspot.com",
-      messagingSenderId: "78626384450",
-      appId: "1:78626384450:web:5c1a5470485502ab"
-      });
-
-      var user = firebase.auth().currentUser;
-      var name, uid;
-
-      if (user != null) {
-        name = user.displayName;
-        uid = user.uid;
-      };
-
-      var db = firebase.firestore();
-      var website_chat = db.collection("website_chat");
-      var displayNames = db.collection("displayNames");
-
-      firebase.auth().onAuthStateChanged(function (user) {
-        if (user) {
-          toggleSelection(false);
-          toggleChatroom(true);
-        } else {
-          toggleChatroom(false);
-          toggleSelection(true);
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
         }
       });
-    }
-
-    function toggleChatroom(on) {
-        var el = document.getElementsByClassName('chatroom');
-
-        el.style['display'] = on ? 'block' : 'none';
-    };
-
-    function toggleSelection(on) {
-        var el = document.getElementsByClassName('selectroom');
-
-        el.style['display'] = on ? 'block' : 'none';
-    };
-
-    function sendMessage(chatroom, text) {
-      db.collection(chatroom).add({
-        displayName: name,
-        text: text,
-        time: db.ServerValue.TIMESTAMP,
-        uid: uid,
-      })
-        .then(function (docRef) {
-          console.log("Message sent with docid: ", docRef.id);
-        })
-        .catch(function (error) {
-          console.error("Error sharing a very cool message, thanks for sharing though!", error);
-        });
-    };
-
-    getRealtimeUpdates = function() {
-      // WHAT I"M DOING RIGHT NOW
-      // GOAL: MAKE THE UPDATING SYSTEM SO YOU CAN SEE OTHERS" MESSAGES
-      docRef.onSnapshort(function(text){
-        var element = document.getElementById("chathistory");
-        var para = document.createElement("p");
-        var node = document.createTextNode(text);
-        para.appendChild(node);
-        element.appendChild(para);
-      })
-    }
-    getRealtimeUpdates();
-
-    window.onload = function () {
-      getUserDetails();
-    };
-
-  </script>
-
-</head>
-
-<body OnLoad="document.myform.txt.focus()" style="font-family: sans-serif">
-
-
-  <!--Actual Chatroom Interface-->
-  <div class="chatroom">
-
-    <div class="chathistory">
-      <p>Chat:</p>
-    </div>
-
-    <div class="messaging">
-      <form name="message" action="">
-        <input name="textbox" type="text" id="text" size="63" />
-        <input name="sendmessage" type="submit" id="sendbutton" value="Send" />
-      </form>
-    </div>
-
-  </div>
-  <!--Actual Chatroom Interface-->
-
-
-
-  <!--Chatroom Selection Interface-->
-  <div class="selectroom">
-    <form>
-
-    </form>
-  </div>
-  <!--Chatroom Selection Interface-->
-
-
-</body>
+    </script>
+  </body>
 </html>
